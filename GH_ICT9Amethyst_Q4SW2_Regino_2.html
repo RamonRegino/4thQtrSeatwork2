@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+</head>
+<body>
+	<input type="text" id="id2" placeholder="To Minutes"><br>
+	<input type="submit" value="Hours" onclick="myFunction()"><br>
+	<p id="answer"></p>	
+	<script>
+		function myFunction() {
+			var num2 = document.getElementById('id2').value;
+			var answer = Number(num2) / 60;
+			var num2 = document.getElementById('answer').innerHTML = answer + "Hour(s)";
+		}
+	</script>
+</body>
+</html>

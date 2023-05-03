@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+</head>
+<body>
+	<input type="text" id="id3" placeholder="To Hours"><br>
+	<input type="submit" value="Days" onclick="myFunction()"><br>
+	<p id="answer"></p>	
+	<script>
+		function myFunction() {
+			var num3 = document.getElementById('id3').value;
+			var answer = Number(num3) / 24; 
+			var num3 = document.getElementById('answer').innerHTML = answer + "Days";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+</head>
+<body>
+	<input type="text" id="id3" placeholder="To Months"><br>
+	<input type="submit" value="Years" onclick="myFunction()"><br>
+	<p id="answer"></p>	
+	<script>
+		function myFunction() {
+			var num3 = document.getElementById('id3').value;
+			var answer = Number(num3) / 12; 
+			var num3 = document.getElementById('answer').innerHTML = answer + "Years";
+		}
+	</script>
+</body>
+</html>
